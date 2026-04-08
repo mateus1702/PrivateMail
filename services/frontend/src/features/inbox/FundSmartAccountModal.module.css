@@ -1,0 +1,143 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.lead {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+.balanceRow {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.balanceWithRefresh {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  width: 100%;
+}
+
+.addressSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.chainBadgeRow {
+  display: flex;
+  justify-content: center;
+}
+
+.balanceRefresh {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.45rem;
+  min-width: 2rem;
+  min-height: 2rem;
+  line-height: 1;
+  background: var(--color-interactive-active);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: var(--transition-default);
+}
+
+.balanceRefresh:hover:not(:disabled) {
+  background: var(--color-interactive-hover);
+}
+
+.balanceRefresh:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.balanceRefreshActive {
+  opacity: 1;
+}
+
+.balanceRefreshIconSpin {
+  animation: fundModalBalanceRefreshSpin 0.85s linear infinite;
+}
+
+@keyframes fundModalBalanceRefreshSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.balanceLine {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 0.8125rem;
+  color: var(--color-text-primary);
+  overflow-wrap: anywhere;
+}
+
+.addressBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.75rem 1rem;
+  max-width: 100%;
+  box-sizing: border-box;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-input);
+  background: #0f172a;
+  min-width: 0;
+}
+
+.addressText {
+  margin: 0;
+  width: 100%;
+  font-size: 0.8rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+  text-align: center;
+  color: var(--color-text-on-dark);
+  font-family: ui-monospace, monospace;
+  line-height: 1.45;
+}
+
+.copyInAddressBox {
+  background: rgba(241, 245, 249, 0.12);
+  border-color: rgba(148, 163, 184, 0.4);
+  color: #f1f5f9;
+}
+
+.copyInAddressBox:hover:not(:disabled) {
+  background: rgba(241, 245, 249, 0.2);
+  border-color: rgba(148, 163, 184, 0.55);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.hint {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+}
