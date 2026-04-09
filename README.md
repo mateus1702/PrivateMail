@@ -4,7 +4,7 @@
 
 ## Why this source code is public
 
-This repository is published so **people who use PrivateMail can verify what they are trusting**: smart contracts, client source, and build instructions are here for **independent review**, reproducible builds, and local testing. **Credibility comes from inspectability.**
+This repository is public so **people who use PrivateMail can verify what they are trusting**: smart contracts, client source, and build instructions are here for **independent review**, reproducible builds, and local testing. **Credibility comes from inspectability.**
 
 PrivateMail’s production deployment at **[privatemail.foo](https://www.privatemail.foo/)** runs on **[NoKYC-GasStation](https://github.com/mateus1702/NoKYC-GasStation)**—ERC-4337 **bundler + paymaster** with **USDC**-denominated sponsorship. If you self-host the app or build a compatible stack, **NoKYC-GasStation is the reference AA infrastructure** this codebase is designed and tested against; the included **Sponsor SDK** (`services/frontend/src/lib/sponsor-sdk`) is the same integration pattern the live product uses.
 
